@@ -8,29 +8,28 @@ $ cd EmsiProject
 $ npm run setup
 $ npm run start
 $ Go to localhost:3000
-
 ```
 
 #### Technologies
 Front-End
-```
+
 * [React] - A JavaScript Library built on Chrome's V8 JavaScript engine.
-```
+
 Back-End
-```
+
 * [Node.js] - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Express] - fast node.js network app framework.
-```
+
 Developer Tools
-```
+
 * [WebPack] - Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser.
 * [Babel] - The compiler for next generation JavaScript
 * [NPM] - An all in one package manager.
-```
+
 API
-```
+
 [Axios] - Promise based HTTP client for the browser and node.js
-```
+
 
 #### Project Brief
 
