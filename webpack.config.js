@@ -8,6 +8,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: DIST_DIR,
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -15,8 +16,14 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+            },
+          },
+        ],
       },
       {
         test: /\.(js|jsx)$/,
@@ -33,7 +40,10 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx']
   },
 };

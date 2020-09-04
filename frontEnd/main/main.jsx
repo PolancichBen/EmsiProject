@@ -1,21 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 
-class Main extends React.Component{
-  constructor(props){
-    super(props)
-    this.state ={
-
-    }
-  }
-
-  render (){
+const Main =()=>{
     return (
       <div>
         Hooked Up
       </div>
     )
-  }
 }
 
 export default Main;
