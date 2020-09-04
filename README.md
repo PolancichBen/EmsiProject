@@ -28,7 +28,7 @@ Developer Tools
 
 API
 
-[Axios] - Promise based HTTP client for the browser and node.js
+* [Axios] - Promise based HTTP client for the browser and node.js
 
 
 #### Project Brief
