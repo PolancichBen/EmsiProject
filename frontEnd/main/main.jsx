@@ -34,8 +34,8 @@ const Main = () => {
         Loading...
     </div>
   } else {
-    content = apiSchoolData.map((school, index) => (
-      <Schools school={school} key={index} />
+    content = apiSchoolData.map((currSchool, index) => (
+      <Schools currSchool={currSchool} key={index} />
     ))
   }
 
