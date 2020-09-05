@@ -133,6 +133,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./frontEnd/main/subComponents/schoolSubComponents/lowerCard.jsx":
+/*!***********************************************************************!*\
+  !*** ./frontEnd/main/subComponents/schoolSubComponents/lowerCard.jsx ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar LowerCard = function LowerCard() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"LowerCard\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (LowerCard);\n\n//# sourceURL=webpack:///./frontEnd/main/subComponents/schoolSubComponents/lowerCard.jsx?");
+
+/***/ }),
+
+/***/ "./frontEnd/main/subComponents/schoolSubComponents/upperCard.jsx":
+/*!***********************************************************************!*\
+  !*** ./frontEnd/main/subComponents/schoolSubComponents/upperCard.jsx ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar UpperCard = function UpperCard() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"UpperCard\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (UpperCard);\n\n//# sourceURL=webpack:///./frontEnd/main/subComponents/schoolSubComponents/upperCard.jsx?");
+
+/***/ }),
+
 /***/ "./frontEnd/main/subComponents/schools.jsx":
 /*!*************************************************!*\
   !*** ./frontEnd/main/subComponents/schools.jsx ***!
@@ -141,7 +165,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Schools = function Schools(_ref) {\n  var school = _ref.school,\n      index = _ref.index;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"Schools\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Schools);\n\n//# sourceURL=webpack:///./frontEnd/main/subComponents/schools.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _schoolSubComponents_upperCard_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./schoolSubComponents/upperCard.jsx */ \"./frontEnd/main/subComponents/schoolSubComponents/upperCard.jsx\");\n/* harmony import */ var _schoolSubComponents_lowerCard_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./schoolSubComponents/lowerCard.jsx */ \"./frontEnd/main/subComponents/schoolSubComponents/lowerCard.jsx\");\n\n\n\n\nvar Schools = function Schools(_ref) {\n  var school = _ref.school,\n      index = _ref.index;\n  console.log(school);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_schoolSubComponents_upperCard_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    schoolName: school.name,\n    schoolCity: school.city,\n    schoolState: school.school.city,\n    studentSize: school.latest.student.size,\n    admissionRate: school.latest.admissions.admission_rate.overall\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_schoolSubComponents_lowerCard_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    programCounts: school.latest.programs.cip_4_digit\n  }));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Schools);\n\n//# sourceURL=webpack:///./frontEnd/main/subComponents/schools.jsx?");
 
 /***/ }),
 
