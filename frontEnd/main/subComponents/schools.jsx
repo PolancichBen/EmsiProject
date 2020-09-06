@@ -13,11 +13,13 @@ const Schools = (props) => {
         studentSize={props.currSchool["latest.student.size"]}
         admissionRate={props.currSchool["latest.admissions.admission_rate.overall"]}
       />
+      <hr/>
       <LowerCard
         programCounts={props.currSchool["latest.programs.cip_4_digit"]}
       />
     </div>
   )
 }
+
 
 export default Schools;
