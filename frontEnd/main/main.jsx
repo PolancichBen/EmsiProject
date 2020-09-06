@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import Header from './subComponents/header.jsx';
 import Schools from './subComponents/schools.jsx';
+import styles from './main.css'
 const { deptOfEducationKey } = require('../../config');
 
 
@@ -30,7 +31,7 @@ const Main = () => {
   let content;
   if (loading) {
     content =
-      <div>
+      <div className={styles.loading}>
         Loading...
     </div>
   } else {
@@ -40,11 +41,11 @@ const Main = () => {
   }
 
   return (
-    <div>
-      <div>
+    <div className={styles.mainContainer}>
+      <div className={styles.headerContainer}>
         <Header />
       </div>
-      <div>
+      <div className={styles.contentContainer}>
         {content}
       </div>
     </div>

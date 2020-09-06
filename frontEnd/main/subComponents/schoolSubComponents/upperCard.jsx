@@ -5,7 +5,7 @@ const UpperCard = ({ schoolName, schoolCity, schoolState, studentSize, admission
 
   return (
     <div className={styles.upperCardContainer}>
-      <div className={styles.image}>
+      <div className={styles.universityImage}>
         <img src="./university.svg"></img>
       </div>
       <div className={styles.namingContainer}>
@@ -15,7 +15,7 @@ const UpperCard = ({ schoolName, schoolCity, schoolState, studentSize, admission
         </div>
         <div className={styles.studentContainer}>
           <div className={styles.schoolContainer}>
-            <span className={styles.studentLabel}>School Size:</span>
+            <span className={styles.studentLabel}>Student Size:</span>
             <span className={styles.studentCount}>{studentSize}</span>
           </div>
           <div className={styles.admissionContainer}>

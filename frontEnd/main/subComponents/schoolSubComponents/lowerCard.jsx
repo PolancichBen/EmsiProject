@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from './lowerCard.css'
 
 const LowerCard = ({ programCounts }) => {
 
@@ -78,23 +79,22 @@ const LowerCard = ({ programCounts }) => {
     setPostBaccalaureate(postBaccalaureateCount);
   };
 
-
   return (
-    <div>
-      <div>
+    <div className={styles.lowerCardContainer}>
+      <div className={styles.programCountsLabel}>
         {/* Avaliable Program Counts: */}
         Avaliable Program Counts:
       </div>
-      <div>
+      <div className={styles.degreeListContainer}>
         {/* Each Degree */}
-        {associatesUsed &&  <span>Associate's Degree: <span>{associates}</span></span>}
-        {bachelorsUsed && <span>Bachelors Degree: <span>{bachelors}</span></span>}
-        {mastersUsed && <span>Master's Degree: <span>{masters}</span></span>}
-        {graduateProfessionalUsed && <span>Graduate/Professional Certificate: <span>{graduateProfessional}</span></span>}
-        {doctoralUsed && <span>Doctoral Degree: <span>{doctoral}</span></span>}
-        {firstProfessionalUsed && <span>First Professional Degree: <span>{firstProfessional}</span></span>}
-        {undergradUsed && <span>Undergraduate Certificate or Diploma: <span>{undergrad}</span></span>}
-        {postBaccalaureateUsed && <span>Post-baccalaureate Certificate: <span>{postBaccalaureate}</span></span>}
+        {associatesUsed &&  <div className={styles.degreeLine}><span className={styles.degreeTitle}>Associate's Degree: </span><span className={styles.degreeCount}>{associates}</span></div>}
+        {bachelorsUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>Bachelors Degree: </span><span className={styles.degreeCount}>{bachelors}</span></div>}
+        {mastersUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>Master's Degree: </span><span className={styles.degreeCount}>{masters}</span></div>}
+        {graduateProfessionalUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>Graduate/Professional Certificate: </span><span className={styles.degreeCount}>{graduateProfessional}</span></div>}
+        {doctoralUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>Doctoral Degree: </span><span className={styles.degreeCount}>{doctoral}</span></div>}
+        {firstProfessionalUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>First Professional Degree: </span><span className={styles.degreeCount}>{firstProfessional}</span></div>}
+        {undergradUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>Undergraduate Certificate or Diploma: </span><span className={styles.degreeCount}>{undergrad}</span></div>}
+        {postBaccalaureateUsed && <div className={styles.degreeLine}><span className={styles.degreeTitle}>Post-baccalaureate Certificate: </span><span className={styles.degreeCount}>{postBaccalaureate}</span></div>}
       </div>
     </div>
   )
