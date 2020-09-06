@@ -20,7 +20,7 @@ const UpperCard = ({ schoolName, schoolCity, schoolState, studentSize, admission
           </div>
           <div className={styles.admissionContainer}>
             <span className={styles.admissionLabel}>Admission Rate:</span>
-            <span className={styles.admissionCount}>{admissionRate * 10}</span>
+            <span className={styles.admissionCount}>{Math.round(admissionRate * 100)}%</span>
             <div id="admissionProgressContainer">
               <div id="admissionProgress"></div>
             </div>

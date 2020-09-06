@@ -1,4 +1,10 @@
 .cardContainer {
   display: flex;
+  width: 30%;
+  min-width: 30%;
+  max-width: 30%;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 5px;
 }

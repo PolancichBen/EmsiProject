@@ -1,5 +1,6 @@
 .mainContainer {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .headerContainer{
@@ -7,9 +8,10 @@
 }
 
 .contentContainer {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .loading{
-  
+
 }

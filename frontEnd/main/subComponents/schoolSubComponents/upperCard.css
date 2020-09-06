@@ -14,8 +14,10 @@
 }
 
 .universityImage {
-  width: 18%;
-  min-width: 7%;
+  width: 15%;
+  min-width: 15%;
+  max-width: 15%;
+  margin-right: 5%;
 }
 
 .namingContainer {
@@ -28,11 +30,14 @@
 }
 
 .cityStateContainer {
-
+  width: fit-content;
+  padding: 1px 2px;
+  background-color: lightblue;
+  border-radius: 5px;
 }
 
 .cityState {
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .studentContainer {
@@ -45,11 +50,13 @@
 }
 
 .studentLabel {
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .studentCount {
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: purple;
 }
 
 .admissionContainer{
@@ -58,9 +65,11 @@
 }
 
 .admissionLabel {
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .admissionCount {
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: purple;
 }

@@ -3,7 +3,7 @@
 }
 
 .programCountsLabel {
-
+  font-weight: bold;
 }
 
 .degreeListContainer {
@@ -19,5 +19,5 @@
 }
 
 .degreeCount {
-  
+  font-weight: bold;
 }
