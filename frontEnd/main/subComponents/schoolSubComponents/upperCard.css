@@ -1,0 +1,62 @@
+#admissionProgressContainer {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#admissionProgress {
+  width: 1%;
+  height: 30px;
+  background-color: lightskyblue;
+}
+
+.upperCardContainer {
+  
+}
+
+.image {
+    
+}
+
+.namingContainer {
+
+}
+
+.schoolName {
+
+}
+
+.cityStateContainer {
+
+}
+
+.cityState {
+
+}
+
+.studentContainer {
+
+}
+
+.schoolContainer {
+
+}
+
+.studentLabel {
+
+}
+
+.studentCount {
+
+}
+
+.admissionContainer{
+
+}
+
+.admissionLabel {
+
+}
+
+.admissionCount {
+  
+}
