@@ -11,7 +11,7 @@
   padding: 10px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 750px){
   .cardContainer{
     min-width: 85%;
   }
