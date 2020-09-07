@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './upperCard.css';
 
 const UpperCard = ({ schoolName, schoolCity, schoolState, studentSize, admissionRate }) => {
@@ -20,10 +20,10 @@ const UpperCard = ({ schoolName, schoolCity, schoolState, studentSize, admission
           </div>
           <div className={styles.admissionContainer}>
             <span className={styles.admissionLabel}>Admission Rate:</span>
-            <span className={styles.admissionCount}>{Math.round(admissionRate * 100)}%</span>
-            <div id="admissionProgressContainer">
-              <div id="admissionProgress"></div>
-            </div>
+            <span className={styles.admissionProgressMainContainer}>
+              <span className={styles.admissionCount}>{Math.round(admissionRate * 100)}%</span>
+              <progress className={styles.progressBar} max="100" value={Math.round(admissionRate * 100)}/>
+            </span>
           </div>
         </div>
       </div>

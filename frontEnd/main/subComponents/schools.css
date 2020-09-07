@@ -1,8 +1,8 @@
 .cardContainer {
   display: flex;
-  width: 30%;
-  min-width: 30%;
-  max-width: 30%;
+  width: -webkit-fill-available;
+  min-width: 45%;
+  max-width: 47%;
   flex-direction: column;
   border: 1px solid black;
   border-radius: 3px;
